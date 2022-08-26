@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a838936037.js" crossorigin="anonymous"></script>
     <title>To-do List (Master)</title>
     <style>
-          * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -58,7 +58,60 @@
         #add-task:hover {
             background-color: green;
             color: white;
-        } 
+        }
+
+        /* Styling for task which get added to to-do list */
+        .task {
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 3px;
+            padding: 5px;
+
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .task li {
+            /* outline: 1px solid red; */
+            list-style: none;
+            flex: 4;
+            padding: 5px;
+            font-size: 1.3rem;
+            margin: 8px;
+        }
+
+        .task button {
+            flex: 1;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .task .checkTask {
+            color: orange;
+            margin-right: 5px;
+            border: 2px solid orange;
+            font-size: 1.5rem;
+        }
+
+        .task .checkTask:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .task .deleteTask {
+            color: red;
+            border: 2px solid red;
+            font-size: 1.3rem;
+        }
+
+        .task .deleteTask:hover {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 
